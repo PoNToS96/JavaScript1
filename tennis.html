@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Spela tennis</title>
+    <style>
+        * { 
+            padding: 0; 
+            margin: 15px auto; 
+        } 
+
+        canvas { 
+            display: block; 
+            margin: 0 auto; 
+            border: 15px solid #5c5c3d;
+            box-shadow: 0 0 20px 10px #5c5c3d;
+            background: #eee; 
+            background-image:-moz-linear-gradient(top,#eee,#5c5c3d 80%);
+            background-image:-webkit-gradient(linear,right,top,color-stop(#eee),color-stop(80%,#5c5c3d));
+            background-image:-webkit-linear-gradient(top,#eee,#5c5c3d 80%);
+            background-image:-o-linear-gradient(top,#eee,#5c5c3d 80%);
+            background-image:-ms-linear-gradient(top,#eee,#5c5c3d 80%);
+            background-image:linear-gradient(to top,#eee,#5c5c3d 80%);
+        }
+
+        #racket {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="tennis.js"></script>
+</head>
+<body>
+
+<canvas id="minCanvas" width="550" height="370"></canvas>
+<img id="racket" src="gul_knapp.jpg">
+<div id="gameOver" title="Tennis med Dennis">
+    <p>Hoppsan! Du förlorade. Vill du börja om?</p>
+</div>
+<div id="vinst" title="Tennis med Dennis">
+    <p>Du vann! Vill du spela igen?</p>
+</div>
+</body>
+</html>
