@@ -1,1 +1,1 @@
-# JavaScript1
+Webbsida med länkar till bl a ett spel.
